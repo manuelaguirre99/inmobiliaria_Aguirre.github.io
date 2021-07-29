@@ -35,7 +35,7 @@ body{
 .valoresCards{
     background-color: rgb(247, 245, 245);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.116);
-    width: 300px;
+    width: 275px;
     border-radius: 5px;
     padding: 1rem;
     margin: 1.5rem;
@@ -74,7 +74,7 @@ body{
 
 .propiedadesCards{
     background-color: rgb(250, 250, 250);
-    width: 300px;
+    width: 275px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 5px;
     text-align: left;
@@ -115,17 +115,64 @@ body{
 .botonInfo:hover{
     background-color: rgb(206, 151, 0) ;
 }
+.imagenesR{
+    width: 250px;
+    height: 225px;
+}
 
 /*Responsive*/
 
 /*Mobile*/
 @media screen and (min-width: 320px){
+    .valoresBox{
+        flex-direction: column;
+    }
+    .valoresCards{
+        width: 250px;
+    }
+    .propiedadesBox{
+        flex-direction: column;
+        margin-left: auto;
+    }
+    .propiedadesCards{
+        width: 250px;
+    }
 
 }
- /*TABLET*/
+ /*Tablet*/
  @media screen and (min-width: 768px){
+    .valoresBox{
+        flex-direction: row;
+    }
+    .valoresCards{
+        width: 275px;
+    }
+    .propiedadesBox{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .propiedadesCards{
+        width: 275px;
+    }
+    .imagenesR{
+        width: 275px;
+        height: 250px;
+    }
 
 }
 /*1024*/
 @media screen and (min-width:1024px){
+    .valoresCards{
+        width: 275px;
+    }
+    .propiedadesBox{
+        flex-wrap: nowrap;
+    }
+    .propiedadesCards{
+        width: 275px;
+    }
+    .imagenesR{
+        width: 275px;
+        height: 250px;
+    }
 }
